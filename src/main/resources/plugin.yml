@@ -1,0 +1,31 @@
+name: EcoSalary
+version: '${project.version}'
+main: me.baraban4ik.ecosalary.EcoSalary
+api-version: 1.13
+author: Baraban4ik
+depend: [ Vault ]
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - PlayerPoints
+
+commands:
+  ecosalary:
+    usage: /<command>
+    aliases: [es, ecosalary, esalary]
+  salary:
+    usage: /<command>
+permissions:
+  ecosalary.*:
+    default: op
+    children:
+      ecosalary.salary: true
+      ecosalary.help: true
+      ecosalary.reload: true
+
+  ecosalary.salary:
+    default: true
+  ecosalary.help:
+    default: true
+  ecosalary.reload:
+    default: op

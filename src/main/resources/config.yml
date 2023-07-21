@@ -1,0 +1,85 @@
+#
+#  ____  ___  _____    ___    __    __      __    ____  _  _    —————————————————————
+# ( ___)/ __)(  _  )  / __)  /__\  (  )    /__\  (  _ \( \/ )  │ Author — Baraban4ik │
+#  )__)( (__  )(_)(   \__ \ /(__)\  )(__  /(__)\  )   / \  /   │   Version — 1.0.0   │
+# (____)\___)(_____)  (___/(__)(__)(____)(__)(__)(_)\_) (__)    —————————————————————
+#
+
+# IT'S BETTER NOT TO CHANGE IT!
+config-version: ${project.version}
+
+# DON'T CHANGE IT IF YOU DON'T KNOW WHAT IT IS!
+hex-pattern: "&#[a-fA-F0-9]{6}"
+
+# Type of economy for the plugin
+# Based on Vault or PlayerPoints
+# Keep in mind that for Vault you need a separate plugin for the economy, such as EssentialsX
+economy: Vault
+
+
+# Configuring salaries for different groups
+Groups:
+  default: # Group name
+    salary: 1000 # Salary amount
+    items:
+      example:
+        name: "Coin"
+        material: GOLD_NUGGET
+        amount: 10
+        lore: []
+    cooldown: 86400 # Cooldown in seconds
+  vip:
+    salary: 3000
+    cooldown: 43200
+    items: []
+  premium:
+    salary: 5000
+    cooldown: 21600
+    items: []
+
+# Available placeholders: %player% — player name, %time% — salary cooldown, %salary% — salary amount.
+# HEX color support(1.16+), Example: &#fffffExample hex text.
+Messages:
+  time:
+    days:
+      1: "day"
+      2: "day"
+      3: "days"
+    hours:
+      1: "hour"
+      2: "hours"
+      3: "hours"
+    minutes:
+      1: "minute"
+      2: "minutes"
+      3: "minutes"
+    seconds:
+      1: "second"
+      2: "seconds"
+      3: "seconds"
+
+
+  no-permission:
+    - " "
+    - "  &f&lᴇ&a&lsᴀʟᴀʀʏ  &7|  &fYou don't have permission!"
+    - " "
+  help:
+    - " "
+    - "   &f&lᴇᴄᴏ&a&lsᴀʟᴀʀʏ &7| &fCommands helper"
+    - " "
+    - "      &f/salary &7— &aGet salary"
+    - "      &f/es help &7— &aOpen this menu"
+    - "      &f/es reload &7— &aReloading the plugin configuration"
+    - " "
+  salary-received:
+    - " "
+    - "  &f&lᴇ&a&lsᴀʟᴀʀʏ  &7|  &fYou received a salary in the amount of &a&l%salary% $"
+    - " "
+  salary-cooldown:
+    - " "
+    - "  &f&lᴇ&a&lsᴀʟᴀʀʏ  &7|  &fYou will be able to get your salary in &a&l%time%"
+    - " "
+  no-salary:
+    - " "
+    - "  &f&lᴇ&a&lsᴀʟᴀʀʏ  &7|  &fNo salary is listed for your privilege."
+    - " "
