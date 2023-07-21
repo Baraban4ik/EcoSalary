@@ -1,9 +1,9 @@
 
 # EcoSalary
 
-**Salary manager for your server.**
-
-Customization for each group individually, give items, give currency (Vault or PlayerPoints).
+Salary manager for your server.
+Customization for each group individually, give items,
+give currency (Vault or PlayerPoints).
 
 ## Support
 - Vault
@@ -24,7 +24,8 @@ Customization for each group individually, give items, give currency (Vault or P
   Permission required: ecosalary.reload
   
 ## Downloads
-- [SpigotMC.org](https://www.spigotmc.org/resources/ecolobby-for-lobby-plugin.101547/) \
-- [SpigotMC.ru](https://spigotmc.ru/resources/ecolobby-plagina-dlja-lobbi.998/) \
-- [Github releases](https://github.com/Baraban4ik/EcoLobby/releases)
+- [SpigotMC.org](https://www.spigotmc.org/resources/ecosalary.111383/)
+- [SpigotMC.ru](https://spigotmc.ru/resources/ecosalary-menedzher-zarplat.1571/)
+- [Modrinth](https://modrinth.com/plugin/ecosalary)
+- [Github releases](https://github.com/Baraban4ik/EcoSalary/releases)
 
