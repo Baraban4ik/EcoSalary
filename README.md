@@ -4,7 +4,6 @@
 Salary manager for your server.
 
 Customization for each group individually, give items,
-
 give currency (Vault or PlayerPoints).
 
 ## Support
